@@ -1,0 +1,81 @@
+/* Header */
+header {
+    height: 140px;
+    background-color: #fff;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 0 10px rgba(35, 31, 32, 0.2);
+
+    a {
+        display: block;
+    }
+
+    .kiskedvencek-logo {
+        width: 280px;
+        height: 125px;
+        background: url("../images/base/kiskedvencek-logo.png") no-repeat 0 0;
+        background-size: contain;
+        margin-top: 8px;
+    }
+
+    .spar-logo {
+        width: 128px;
+        height: 23px;
+        background: url("../images/base/spar-logo.png") no-repeat 0 0;
+        background-size: contain;
+        margin-top: 36px;
+    }
+
+    .left {
+        float: left;
+    }
+
+    .right {
+        float: left;
+        margin-left: 39px;
+    }
+
+    nav {
+        margin-top: 48px;
+    }
+
+    ul {
+        font-size: 0;
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 40px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: 18px;
+            letter-spacing: -0.025em;
+            color: #74879b;
+
+            @include transition-all;
+
+            &:hover {
+                color: #de362d;
+            }
+        }
+    }
+
+    .active {
+        color: #de362d;
+    }
+
+    .login-button {
+        width: 101px;
+        height: 44px;
+        line-height: 44px;
+        position: absolute;
+        right: 15px;
+        top: 20px;
+    }
+}

@@ -1,3 +1,4 @@
+/* Base */
 .container {
     position: relative;
     margin-right: auto;
@@ -42,5 +43,28 @@
     a {
         text-decoration: underline;
         color: #a52a2a;
+    }
+}
+
+body{
+    font-family: $opensans;
+}
+/* Breadcrumb */
+.breadcrumb{
+    height: 60px;
+    position: relative;
+    box-shadow: 0 0 10px 0 rgba(35,31,32,.2);
+    li{
+        display: inline-block;
+    }
+    a{        
+        color: #5a8099;
+        line-height: 60px;
+        display: block;
+        position: relative;
+        &.active{
+            font-weight: 700;
+            text-transform: uppercase;
+        }
     }
 }

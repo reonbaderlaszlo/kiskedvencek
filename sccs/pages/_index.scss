@@ -1,0 +1,107 @@
+/* Welcome */
+.welcome {
+    padding: 50px 0 73px 40px;
+
+    h1 {
+        width: 430px;
+    }
+
+    .left {
+        width: 495px;
+        float: left;
+    }
+
+    .right {
+        float: left;
+        width: calc(100% - 495px);
+        height: 553px;
+        background: url("../images/index/max-and-duke.png") no-repeat 0 0;
+        background-size: cover;
+        margin-left: -46px;
+        margin-top: -6px;
+    }
+
+    a {
+        width: 125px;
+        height: 44px;
+        line-height: 44px;
+        margin-top: 35px;
+    }
+
+    p {
+        margin-top: 20px;
+    }
+}
+/* Extra cards */
+.extra-cards {
+    background-color: #de362d;
+    color: #fff;
+    padding: 50px 0 103px;
+
+    h1, p {
+        text-align: center;
+        color: #fff;
+    }
+    h1{
+    	padding-bottom: 15px;
+    }
+    p{
+    	padding-bottom: 35px;
+    }
+    .video{
+    	width: 512px;
+    	height: 288px;
+    	display: block;
+    	background: #cfd8dc url('../images/index/play-btn.png') no-repeat center;
+    	background-size: 55px 55px;
+    	box-shadow: 5px 9px rgba(0,0,0,.2);
+		border: solid 4px #fff;
+		margin: 0 auto;
+    }
+    .products{
+    	padding-left: 79px;
+    }
+    ul{
+    	margin: 85px -50px 0;
+    }
+    li{
+    	float: left;
+    	margin: 0 50px 55px;
+    	position: relative;
+    }
+    a{
+    	width: 175px;
+    	height: 44px;
+    	line-height: 44px;
+    	margin: 0 auto;
+    }
+    .name{
+    	font-family: $oswald;
+    	font-size: 24px;
+    	line-height: 27px;
+    	margin-top: 37px;
+    	min-height: 108px;
+    }
+    .description{
+    	line-height: 20px;
+    	padding: 15px 0 25px;
+
+    }
+    span{
+    	display: block;
+    	font-family: $opensanscond;
+    	font-weight: 700;
+    	letter-spacing: 0.025em;
+    	font-size: 60px;
+    	line-height: 54px;
+    }
+    .price-3{
+    	color: #faec3e;
+    	position: absolute;
+    	bottom: 0;
+    	right: -70px;
+    	span{
+    		color: #fff;
+    	}
+    }
+}

@@ -1,0 +1,81 @@
+/* Footer */
+footer {
+    min-height: 140px;
+    box-shadow: 0 0 10px rgba(35, 31, 32, 0.2);
+
+    a {
+        display: block;
+    }
+
+    .left {
+        float: left;
+        width: 270px;
+    }
+
+    .center {
+        float: left;
+        max-width: 630px;
+        text-align: center;
+    }
+
+    .right {
+        float: right;
+    }
+
+    .kiskedvencek-logo {
+        width: 229px;
+        height: 97px;
+        background: url("../images/base/kiskedvencek-logo.png") no-repeat 0 0;
+        background-size: contain;
+        margin-top: 21px;
+    }
+
+    .spar-logo {
+        width: 143px;
+        height: 25px;
+        background: url("../images/base/spar-logo.png") no-repeat 0 0;
+        background-size: contain;
+        margin: 41px 4px 0 0;
+    }
+
+    nav {
+        margin-top: 43px;
+    }
+
+    ul {
+        font-size: 0;
+    }
+
+    li {
+        display: inline-block;
+        margin-right: 23px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        a {
+            text-transform: uppercase;
+            font-weight: 800;
+            font-size: 16px;
+            letter-spacing: -0.025em;
+            color: #74879b;
+
+            @include transition-all;
+
+            &:hover {
+                color: #de362d;
+            }
+        }
+    }
+
+    .active {
+        color: #de362d;
+    }
+
+    .copyright {
+        font-size: 14px;
+        color: #595959;
+        padding-top: 38px;
+    }
+}
