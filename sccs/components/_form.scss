@@ -12,3 +12,22 @@ select{
 	background-size: 12px 19px;
 	text-transform: uppercase;
 }
+form{
+	input{
+		width: 100%;
+		height: 56px;
+	}
+	label{
+		line-height: 24px;
+		color: #5a8099;
+		padding: 0 7px 5px 0;
+		display: block;
+	}
+}
+.error{
+	position: absolute;
+	top: 0;
+	right: 0;
+	color: #de362d;
+	text-align: right;
+}
