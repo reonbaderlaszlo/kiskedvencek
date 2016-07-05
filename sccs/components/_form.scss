@@ -1,0 +1,14 @@
+select, input{
+	border-radius: 10px;
+	background-color: #fff !important;
+	border: solid 2px #dae5eb;
+	display: block;
+	font-weight: 700;
+	padding: 0 15px;
+	color: #424556;
+}
+select{
+	background: url('../images/base/select-background.png') no-repeat center right 20px;
+	background-size: 12px 19px;
+	text-transform: uppercase;
+}

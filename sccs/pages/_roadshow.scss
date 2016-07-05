@@ -1,0 +1,144 @@
+.roadshow {
+    margin-bottom: 100px;
+
+    h2 {
+        margin-bottom: 40px;
+    }
+
+    .top {
+        min-height: 180px;
+        background-color: #e1ecf2;
+        padding: 31px 0 0 40px;
+    }
+
+    label {
+        font-size: 18px;
+        font-weight: 700;
+        color: #5a8099;
+        text-transform: uppercase;
+        padding-right: 5px;
+    }
+
+    .form-control, label, select {
+        display: inline-block;
+    }
+
+    .form-control {
+        margin-top: 25px;
+
+        &:nth-of-type(2) {
+            margin-left: 30px;
+        }
+    }
+
+    select {
+        width: 385px;
+        height: 56px;
+        line-height: 56px;
+    }
+
+    p {
+        line-height: 24px;
+        color: #5a8099;
+    }
+
+    .red {
+        color: #de362d;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .table-box {
+        height: 492px;
+        width: 1090px;
+        overflow: auto;
+        max-width: 100%;
+        margin: 45px auto;
+        border: solid 1px #cfd8dc;
+    }
+
+    table {
+        width: 100%;
+    }
+
+    tr {
+        &:first-child {
+            td {
+                border-bottom: 0;
+                height: 40px;
+                font-family: $robotocond;
+                color: #5a8099;
+                background-color: #e1ecf2;
+                padding-left: 15px !important;
+                border-color: #eff5f8;
+            }
+        }
+
+        &:last-child {
+            td {
+                border-bottom: 0;
+            }
+        }
+
+        td {
+            border-bottom: 1px solid #cfd8dc;
+            border-right: 1px solid #cfd8dc;
+            height: 50px;
+            font-size: 18px;
+            color: #424556;
+            position: relative;
+
+            &:first-child {
+                padding-left: 40px;
+            }
+
+            &:nth-child(2) {
+                padding-left: 57px;
+            }
+
+            &:nth-child(3) {
+                padding-left: 20px;
+            }
+
+            &:last-child {
+                padding-left: 15px;
+                border-right: 0;
+            }
+
+            span {
+                display: block;
+                position: absolute;
+                cursor: pointer;
+                right: 15px;
+
+                @include transition-all;
+
+                &:last-child {
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 7px 6px 0 6px;
+                    border-color: #9db4c3 transparent transparent transparent;
+                    bottom: 9px;
+
+                    &:hover {
+                        border-color: #de362d transparent transparent transparent;
+                    }
+                }
+
+                &:first-child {
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 0 6px 7px 6px;
+                    border-color: transparent transparent #9db4c3 transparent;
+                    top: 12px;
+
+                    &:hover {
+                        border-color: transparent transparent #de362d transparent;
+                    }
+                }
+            }
+        }
+    }
+}

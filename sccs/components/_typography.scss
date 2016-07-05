@@ -7,6 +7,36 @@ h1{
 	line-height: 60px;
 	color: #de362d;
 }
+h2{
+	font-weight: 800;
+	height: 73px;
+	padding-top: 7px;
+	letter-spacing: -0.025em;
+	text-transform: uppercase;
+	font-size: 32px;
+	color: #74879b;
+	margin-top: 30px;
+	background: url('../images/base/title-background.png') no-repeat right bottom;
+	background-size: 1170px 73px;
+
+}
+h3{
+	font-size: 48px;
+	font-weight: 800;
+	letter-spacing: -0.025em;
+	color: #de362d;
+	text-transform: uppercase;
+}
+h4{
+	font-weight: 800;
+	font-size: 32px;
+	letter-spacing: -0.025em;
+	line-height:50px;
+	color: #74879b;
+	text-transform: uppercase;
+	border-bottom: 2px solid #e6eaee;
+	margin-bottom: 23px;
+}
 p{
 	font-size: 18px;
 	color: #595959;

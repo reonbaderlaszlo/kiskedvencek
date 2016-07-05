@@ -1,0 +1,63 @@
+<?php echo $header; ?>
+<main>
+<div class="breadcrumb">
+	<div class="container">
+		<ul>
+			<li>
+				<a href="#">Főoldal</a>
+			</li>
+			<li>
+				<a href="#" class="active">Roadshow</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<section class="roadshow">
+	<div class="container">
+		<h2>Roadshow</h2>
+		<div class="box-template">
+			<div class="top">
+				<p class="red">Mi imádunk játszani és te?</p>
+				<p>Kattints, és itt nyomon követheted, épp melyik áruházban játszhatsz a szuper nyereményekért! Gyere, várunk!</p>
+				<div class="form-control">
+					<label for="address">Cím:</label>
+					<select id="address">
+						<option selected disabled>Mind</option>
+						<option>Annyira</option>
+						<option>Nem</option>
+					</select>
+				</div>
+				<div class="form-control">
+				<label for="address">Dátum:</label>
+					<select id="address">
+						<option selected disabled>Mind</option>
+						<option>Annyira</option>
+						<option>Nem</option>
+					</select>
+				</div>
+			</div>
+			<div class="table-box">
+				<table>
+						<tr>
+							<td>Dátum <span></span><span></span></td>
+							<td>Időpont <span></span><span></span></td>
+							<td>Cím <span></span><span></span></td>
+							<td>SPAR üzlet <span></span><span></span></td>
+						</tr>
+					<?php for ($i=0; $i < 50; $i++) { 
+						?>
+						<tr>
+							<td>2016-05-10</td>
+							<td>9:00</td>
+							<td>1083 Budapest, Szigony utva 12.</td>
+							<td>SPAR Szupermarket</td>
+						</tr>
+						<?php
+					} ?>
+				</table>
+			</div>
+		</div>
+	</div>
+</section>
+</main>
+<?php echo $footer; ?>

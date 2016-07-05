@@ -1,0 +1,210 @@
+/* Pets */
+.pets {
+    padding-bottom: 76px;
+
+    h1, p {
+        padding-top: 25px;
+    }
+
+    h1 {
+        margin-bottom: -10px;
+    }
+
+    .top {
+        padding-bottom: 65px;
+        border-bottom: 2px solid #e1ecf2;
+
+        .left {
+            width: 537px;
+            max-width: 100%;
+            float: left;
+        }
+
+        .right {
+            width: 535px;
+            max-width: 100%;
+            height: 417px;
+            float: right;
+            background: url("../images/pets/max-and-duke.png") no-repeat 0 0;
+            background-size: contain;
+            margin-right: 51px;
+        }
+    }
+
+    .cards {
+        margin: 33px -12px 0;
+
+        li {
+            display: inline-block;
+            margin: 0 12px 24px 12px;
+        }
+
+        a {
+            display: block;
+            width: 270px;
+            height: 310px;
+            position: relative;
+            background-color: #eceff1;
+
+            @include transition-all;
+
+            &:hover {
+                background-color: #fff;
+
+                span {
+                    background-color: #de362d;
+                    color: #fff;
+                }
+            }
+        }
+
+        span {
+            @include transition-all;
+
+            display: block;
+            height: 80px;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            line-height: 80px;
+            font-size: 32px;
+            letter-spacing: -0.025em;
+            font-weight: 800;
+            color: #5a8099;
+            text-transform: uppercase;
+            padding-left: 22px;
+            background-color: #fff;
+        }
+    }
+
+    .max {
+        background: url("../images/pets/max.png") no-repeat center top 18px;
+        background-size: 161px 210px;
+    }
+
+    .duke {
+        background: url("../images/pets/duke.png") no-repeat center top 16px;
+        background-size: 268px 308px;
+    }
+
+    .gigi {
+        background: url("../images/pets/gigi.png") no-repeat center top 16px;
+        background-size: 239px 240px;
+    }
+
+    .mel {
+        background: url("../images/pets/mel.png") no-repeat center top 16px;
+        background-size: 222px 272px;
+    }
+
+    .hogolyo {
+        background: url("../images/pets/hogolyo.png") no-repeat center top 2px;
+        background-size: 186px 228px;
+    }
+
+    .tetko {
+        background: url("../images/pets/tetko.png") no-repeat center top 16px;
+        background-size: 225px 218px;
+    }
+
+    .harci {
+        background: url("../images/pets/harci.png") no-repeat center top 16px;
+        background-size: 265px 219px;
+    }
+
+    .ozon {
+        background: url("../images/pets/ozon.png") no-repeat center top 40px;
+        background-size: 268px 187px;
+    }
+
+    .bottom {
+        .left {
+            width: 500px;
+            float: left;
+            max-width: 100%;
+        }
+
+        .right {
+            width: 615px;
+            height: 336px;
+            max-width: 100%;
+            float: right;
+            background: url("../images/pets/bad-pets.png") no-repeat 0 0;
+            background-size: contain;
+            margin-top: 37px;
+        }
+
+        .cards {
+            margin-top: 18px;
+        }
+    }
+}
+
+/* Pet */
+.pet {
+    padding-bottom: 50px;
+    .left{
+        float: left;
+
+    }
+    .right{
+        float: right;
+    }
+    .left, .right{
+        max-width: 100%;
+    }
+    .city {
+        padding-bottom: 79px;
+        .left {
+            width: 700px;            
+        }
+        .right {
+            width: 370px;
+
+        }
+    }    
+    .channel{
+        padding-bottom: 22px;
+        .left{
+            width: 515px;
+        }
+    }
+
+    h3 {
+        padding: 45px 0 10px;
+    }
+    .pictures, .videos{
+        padding-bottom: 45px;
+        ul{
+            font-size: 0;
+            margin: 0 -15px;
+        }
+        li{
+            display: inline-block;
+            margin: 0 15px 15px;
+        }
+        a{
+            display: block;
+            width: 370px;
+            position: relative;
+            max-width: 100%;
+            box-shadow: 5px 9px rgba(0,0,0,.15);
+            border: solid 8px #424556;
+        }
+    }
+    .videos{
+        a{
+            &:after{
+                background: url('../images/base/play-btn.png') no-repeat center;
+                background-size: 55px 55px;
+                width: 55px;
+                height: 55px;
+                content: " ";
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+    }    
+}

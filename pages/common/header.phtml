@@ -13,6 +13,7 @@
         <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Oswald:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:700,400&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
         <!-- JQuery -->
         <script src="/<?php echo $this->config->rootDir; ?>/<?php echo $this->system; ?>/view/<?php echo $this->config->template; ?>/js/3rd-party/jquery.min.js"></script>
         <!-- 3rd-party JS files -->
@@ -33,20 +34,21 @@
         <!--[if lt IE 9]>
         <p class="browserupgrade"><strong>Elavult</strong> böngészőt használsz. Kérlek <a href="http://browsehappy.com/">tölts le</a> újabb böngészőt, az optimális böngészés érdekében.</p>
         <![endif]-->
+        <a name="gallery"></a>
         <header>
             <div class="container">
                 <div class="left">
-                    <a href="#" class="kiskedvencek-logo"></a>
+                    <a href="/kiskedvencek/" class="kiskedvencek-logo"></a>
                 </div>
                 <div class="right">
                     <a href="#" class="spar-logo"></a>
                     <nav>
                         <ul>
-                            <li><a class="active" href="#">Promóció</a></li>
-                            <li><a href="#">Kedvencek</a></li>
+                            <li><a class="active" href="/kiskedvencek/promocio">Promóció</a></li>
+                            <li><a href="/kiskedvencek/kedvencek">Kedvencek</a></li>
                             <li><a href="#">Cserebere</a></li>
-                            <li><a href="#">Játék</a></li>
-                            <li><a href="#">Roadshow</a></li>
+                            <li><a href="/kiskedvencek/jatek">Játék</a></li>
+                            <li><a href="/kiskedvencek/roadshow">Roadshow</a></li>
                         </ul>
                     </nav>
                     <a href="#" class="login-button btn yellow">Belépés</a>
