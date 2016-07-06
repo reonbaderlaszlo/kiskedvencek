@@ -1,0 +1,75 @@
+<?php echo $header; ?>
+<main>
+<div class="breadcrumb">
+	<div class="container">
+		<ul>
+			<li>
+				<a href="#">Főoldal</a>
+			</li>
+			<li>
+				<a href="#" class="active">Profil</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<section class="profile">
+	<div class="container">
+		<h2>Profil</h2>
+		<div class="left box-template">
+			<form action="#" method="post" id="avatar">
+				<input id="avatar-image" type="file" name="avatar_image">
+			</form>
+			<div class="top">
+				<a href="#" class="btn red delete-profile">Profil törlése</a>
+				<div class="profile-icon stock-img"></div>
+				<a href="#" class="delete-image">Törlés</a>
+				<label for="avatar-image">Feltöltés</label>
+			</div>
+			<form>
+				<div class="form-control">
+					<div class="error">Error</div>
+					<label for="last-name">Vezetéknév:</label>
+					<input type="text" id="last-name">
+				</div>
+				<div class="form-control">
+					<div class="error">Error</div>
+					<label for="first-name">Keresztnév:</label>
+					<input type="text" id="first-name">
+				</div>
+				<h5>Jelszó</h5>
+				<div class="form-control password">
+					<div class="error">Nagyon durva hiba, eszméletlen</div>
+					<label for="current-password">Jelenlegi jelszó:</label>
+					<input type="password" id="current-password">
+				</div>
+				<div class="form-control password">
+					<div class="error">Nagyon durva hiba, eszméletlen</div>
+					<label for="new-password">Új jelszó:</label>
+					<input type="password" id="new-password">
+					<input type="text" id="new-password">
+					<a href="#" class="show-password"></a>
+				</div>
+				<div class="form-control checkbox-1">
+				</div>
+				<div class="form-control checkbox-2">
+					
+				</div>
+				<input class="btn yellow" type="submit" value="Mentés">
+			</form>
+		</div>
+		<div class="right">
+			<div class="top box-template">
+				<h5>Értesítés</h5>
+				<input type="checkbox" id="checkboxG1" class="css-checkbox" /><label for="checkboxG1" class="css-label">E-mail értesítés</label>
+				<p>Igen, szeretnék értesítést kapni e-mailben.</p>
+				<div class="seperator"></div>
+				<h5>Hírlevél</h5>
+				<input type="checkbox" id="checkboxG2" class="css-checkbox" /><label for="checkboxG2" class="css-label">Spar hírlevél feliratkozás</label>
+				<p>Igen, szeretnék feliratkozni a SPAR hírleveleire.</p>
+			</div>
+			<div class="bottom"></div>
+		</div>
+	</div>
+</section>
+</main>
+<?php echo $footer; ?>

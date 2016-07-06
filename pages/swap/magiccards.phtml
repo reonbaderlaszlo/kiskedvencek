@@ -1,0 +1,49 @@
+<?php echo $header; ?>
+<main>
+<div class="breadcrumb">
+	<div class="container">
+		<ul>
+			<li>
+				<a href="#">Főoldal</a>
+			</li>
+			<li>
+				<a class="active" href="#">Cserebere</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<section class="magic-cards swap">
+	<div class="container">
+		<h2>Cserebere</h2>
+		<ul class="navigation">
+			<li><a class="active" href="/kiskedvencek/cserebere/varazskartyak">Varázskártyák</a></li>
+			<li><a href="/kiskedvencek/cserebere/partnerek">Partnerek</a></li>
+			<li><a href="/kiskedvencek/cserebere/listam">Listám</a></li>
+			<li><a href="/kiskedvencek/cserebere/uzenetek">Üzenetek</a></li>
+		</ul>
+		<div class="search-box">
+			<input type="text" placeholder="Keresés">
+			<button></button>
+		</div>
+		<div class="cards clear">
+			<?php
+			for ($i=1; $i < 8; $i++) {
+			?>
+			<div class="card box-template">
+				
+				<h5>Max</h5>
+				<div class="number inactive"><?php echo $i."."; ?></div>
+				<div class="card-image"></div>
+				<a href="#" class="btn inactive searching">Keresem</a>
+				<a href="#" class="btn inactive offer">Kínálom</a>
+				
+			</div>
+			<?php
+			}
+			?>
+		</div>
+		<a href="#" class="all-card btn yellow">Összes kártya</a>
+	</div>
+</section>
+</main>
+<?php echo $footer; ?>

@@ -78,4 +78,39 @@ header {
         right: 15px;
         top: 20px;
     }
+
+    .logout-button {
+        width: 101px;
+        height: 44px;
+        line-height: 44px;
+        position: absolute;
+        right: 15px;
+        top: 20px;
+    }
+
+    .profile-icon {
+        position: absolute;
+        top: 20px;
+        right: 150px;
+        font-family: $opensanscond;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #de362d;
+
+        .icon {
+            width: 43px;
+            height: 43px;
+            border-radius: 50%;
+            float: left;
+            background-color: black;
+            margin: 2px 15px 0 0;
+        }
+
+        .name {
+            width: 160px;
+            text-align: center;
+            float: left;
+            margin-top: 12px;
+        }
+    }
 }

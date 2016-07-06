@@ -1,0 +1,33 @@
+<?php echo $header; ?>
+<main>
+<div class="breadcrumb">
+	<div class="container">
+		<ul>
+			<li>
+				<a href="#">Főoldal</a>
+			</li>
+			<li>
+				<a href="#" class="active">Elfelejtett jelszó</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<section class="forgot-password">
+	<div class="container">
+		<h2>Elfelejtett jelszó</h2>
+		<div class="left box-template">
+			<p>Add meg a regisztrált e-mail címedet és mi elküldjük számodra a jelszó megújításhoz szükséges teendőket.</p>
+			<form>
+				<div class="form-control">
+					<div class="error">Error</div>
+					<label for="email">E-mail:</label>
+					<input type="text" id="email">					
+				</div>
+				<input class="btn yellow" type="submit" value="Küldés">
+			</form>
+		</div>
+		<div class="right"></div>
+	</div>
+</section>
+</main>
+<?php echo $footer; ?>

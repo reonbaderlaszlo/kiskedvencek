@@ -1,6 +1,8 @@
+/* Login */
 .login {
-	
-
+    h2{
+        margin-bottom: 40px;
+    }
     .right {
         float: right;
         width: 563px;
@@ -13,40 +15,88 @@
 
     .left {
         width: 585px;
+        max-width: 100%;
         float: left;
-		padding: 60px 0;
-		margin-bottom: 100px;
+        padding: 60px 0;
+        margin-bottom: 100px;
     }
-    .fb-login{
-    	width: 230px;
-		height: 44px;
-		display: block;
-		border-radius: 10px;
-		background: #3b5998 url('../images/login/fb-icon.png') no-repeat center left 13px;
-		background-size: 12px 24px;
-		text-align: center;
-		font-size: 18px;
-		color: #fff;
-		padding-left: 14px;
-		line-height: 44px;
-		margin: 0 auto;
 
+    .fb-login {
+        width: 230px;
+        height: 44px;
+        display: block;
+        border-radius: 10px;
+        background: #3b5998 url("../images/login/fb-icon.png") no-repeat center left 13px;
+        background-size: 12px 24px;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+        padding-left: 14px;
+        line-height: 44px;
+        margin: 0 auto;
     }
-    p{
-    	color: #424556;
-    	text-align: center;
-    	padding: 28px 0 16px;
-    }
-    .form-control{
-    	width: 385px;
-    	max-width: 100%;
-    	margin: 0 auto 25px;
-    	position: relative;
 
+    p {
+        color: #424556;
+        text-align: center;
+        padding: 28px 0 16px;
     }
-    .forgot-password{
-    	display: table;
-    	text-align: right;
-    	color: #de362d;
+
+    .form-control {
+        width: 385px;
+        max-width: 100%;
+        margin: 0 auto 25px;
+        position: relative;
+    }
+
+    .forgot-password {
+        color: #de362d;
+        position: absolute;
+        right: 0;
+        top: -20px;
+    }
+    .password{
+        [type="text"]{
+            display: none;
+        }
+    }
+    .show-password{
+        display: block;
+        content: " ";
+        position: absolute;
+        right: -40px;
+        top: 50px;
+        width: 29px;
+        height: 18px;
+        background: url('../images/base/hide.png') no-repeat 0 0;
+        background-size: contain;
+        &.active{
+            background: url('../images/base/show.png') no-repeat 0 0;
+            background-size: contain;
+        }
+    }
+    [type="submit"]{
+        width: 107px;
+        height: 44px;
+        line-height: 44px;
+        margin-top: 30px;
+    }
+    .not-registered{
+        width: 385px;
+        max-width: 100%;
+        margin: 55px auto 0;
+        font-size: 18px;
+        color: #5a8099;
+        a{
+            font-family: $opensanscond;
+            font-weight: 700;
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #5a8099;
+            background-color: #faec3e;
+            display: inline-block;
+            line-height: 27px;
+            margin-left: 5px;
+        }
     }
 }

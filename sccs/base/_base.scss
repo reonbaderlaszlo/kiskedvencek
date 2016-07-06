@@ -63,6 +63,11 @@ body {
         &:last-child {
             margin-right: 0;
         }
+         &:last-child a{
+            &:after{
+                display: none;
+            }
+        }
     }
 
     a {
@@ -70,6 +75,8 @@ body {
         line-height: 60px;
         display: block;
         position: relative;
+
+       
 
         &:after {
             position: absolute;
@@ -89,10 +96,6 @@ body {
         &.active {
             font-weight: 700;
             text-transform: uppercase;
-
-            &:after {
-                display: none;
-            }
         }
     }
 }

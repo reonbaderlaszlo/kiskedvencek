@@ -24,14 +24,19 @@
 					<label for="email">E-mail:</label>
 					<input type="email" id="email">					
 				</div>
-				<div class="form-control">
+				<div class="form-control password">
 					<div class="error">Nagyon durva hiba, eszméletlen</div>
 					<label for="password">Jelszó:</label>
-					<input type="password" id="password">	
-					<a href="#" class="forgot-password">Elfelejtettem a jelszavamat!</a>				
+					<input type="password" id="password">
+					<input type="text" id="password">
+					<a href="#" class="show-password"></a>			
+				</div>
+				<div class="form-control clear">
+					<a href="/kiskedvencek/elfelejtett-jelszo" class="forgot-password">Elfelejtettem a jelszavamat!</a>
+					<input class="btn yellow" type="submit" value="Belépés">		
 				</div>
 			</form>
-
+			<div class="not-registered">Még nem regisztráltam. <a href="/kiskedvencek/regisztracio">Regisztráció</a></div>
 		</div>
 		<div class="right"></div>
 	</div>

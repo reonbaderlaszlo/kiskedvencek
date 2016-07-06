@@ -1,33 +1,101 @@
-select, input{
-	border-radius: 10px;
-	background-color: #fff !important;
-	border: solid 2px #dae5eb;
-	display: block;
-	font-weight: 700;
-	padding: 0 15px;
-	color: #424556;
+/* Form */
+select, input:not([type="submit"]) {
+    border-radius: 10px;
+    background-color: #fff !important;
+    border: solid 2px #dae5eb;
+    display: block;
+    font-weight: 700;
+    padding: 0 15px;
+    color: #424556;
 }
-select{
-	background: url('../images/base/select-background.png') no-repeat center right 20px;
-	background-size: 12px 19px;
-	text-transform: uppercase;
+
+select {
+    background: url("../images/base/select-background.png") no-repeat center right 20px;
+    background-size: 12px 19px;
+    text-transform: uppercase;
 }
-form{
-	input{
-		width: 100%;
-		height: 56px;
-	}
-	label{
-		line-height: 24px;
-		color: #5a8099;
-		padding: 0 7px 5px 0;
-		display: block;
-	}
+
+form {
+    input:not([type="submit"]) {
+        width: 100%;
+        height: 56px;
+    }
+
+    label {
+        line-height: 24px;
+        color: #5a8099;
+        padding: 0 7px 5px 0;
+        display: block;
+    }
 }
-.error{
-	position: absolute;
-	top: 0;
-	right: 0;
-	color: #de362d;
-	text-align: right;
+
+.error {
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #de362d;
+    text-align: right;
+}
+
+input[type=checkbox].css-checkbox {
+    position: absolute;
+    z-index: -1000;
+    left: -1000px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+}
+
+input[type=checkbox].css-checkbox + label.css-label {
+    padding-left: 45px;
+    height: 32px;
+    display: inline-block;
+    line-height: 32px;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 32px 64px;
+    font-size: 18px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+input[type=checkbox].css-checkbox:checked + label.css-label {
+    background-position: 0 -32px;
+}
+
+label.css-label {
+    background-image: url("../images/base/checkbox.png");
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.password {
+    [type="text"] {
+        display: none;
+    }
+}
+
+.show-password {
+    display: block;
+    content: " ";
+    position: absolute;
+    right: -40px;
+    top: 50px;
+    width: 29px;
+    height: 18px;
+    background: url("../images/base/hide.png") no-repeat 0 0;
+    background-size: contain;
+
+    &.active {
+        background: url("../images/base/show.png") no-repeat 0 0;
+        background-size: contain;
+    }
 }
