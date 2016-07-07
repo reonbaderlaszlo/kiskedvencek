@@ -1,0 +1,62 @@
+<?php echo $header; ?>
+<main>
+<div class="breadcrumb">
+	<div class="container">
+		<ul>
+			<li>
+				<a href="#">Főoldal</a>
+			</li>
+			<li>
+				<a class="active" href="#">Cserebere</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<section class="search swap list">
+	<div class="container">
+		<h2>Cserebere</h2>
+		<ul class="navigation">
+			<li><a href="/kiskedvencek/cserebere/varazskartyak">Varázskártyák</a></li>
+			<li><a href="/kiskedvencek/cserebere/partnerek">Partnerek</a></li>
+			<li><a class="active" href="/kiskedvencek/cserebere/listam/keresem">Listám</a></li>
+			<li><a href="/kiskedvencek/cserebere/uzenetek">Üzenetek</a></li>
+		</ul>
+		<ul class="sub-navigation">
+			<li><a class="active btn red" href="/kiskedvencek/cserebere/listam/keresem">Keresem</a></li>
+			<li><a class="btn grey" href="/kiskedvencek/cserebere/listam/kinalom">Kínálom</a></li>
+		</ul>
+		<div class="big-box no-list clear is-hidden">
+			<div class="left box-template">
+				<h1>Itt megtalálod kis kedvenceidet!</h1>
+				<p>Teljes a 36 darabos kollekció? Ha még egy-kettő vagy több<br>
+				kis kedvenc hiányzik, irány a „Varázskártyák” oldal, ahol<br>bejelölheted őket a keresési listádon!</p>
+				<a href="#" class="btn yellow">Varázskártyák</a>
+			</div>
+			<div class="right"></div>
+		</div>
+		<div class="big-box">
+			<div class="search-box">
+				<input type="text" placeholder="Keresés">
+				<button></button>
+			</div>
+			<div class="cards clear">
+				<?php
+				for ($i=1; $i < 8; $i++) {
+				?>
+				<div class="card box-template">
+					<h5>Max <span>(4 db)</span></h5>
+					<div class="number red"><?php echo $i."."; ?></div>
+					<div class="card-image"></div>
+					<a href="#" class="btn">Törlöm a listából</a>
+				</div>
+				<?php
+				}
+				?>
+			</div>
+			<a href="#" class="delete-all btn yellow">Összes törlése</a>
+			<p>Az összes matrica törléséhez kattints az "Összes törlése" gombra</p>
+		</div>
+	</div>
+</section>
+</main>
+<?php echo $footer; ?>
