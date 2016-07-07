@@ -13,6 +13,13 @@ select {
     background: url("../images/base/select-background.png") no-repeat center right 20px;
     background-size: 12px 19px;
     text-transform: uppercase;
+     -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+select::-ms-expand {
+    display: none;
 }
 
 form {

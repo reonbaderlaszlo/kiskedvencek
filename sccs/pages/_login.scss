@@ -1,8 +1,9 @@
 /* Login */
 .login {
-    h2{
+    h2 {
         margin-bottom: 40px;
     }
+
     .right {
         float: right;
         width: 563px;
@@ -55,12 +56,14 @@
         right: 0;
         top: -20px;
     }
-    .password{
-        [type="text"]{
+
+    .password {
+        [type="text"] {
             display: none;
         }
     }
-    .show-password{
+
+    .show-password {
         display: block;
         content: " ";
         position: absolute;
@@ -68,26 +71,28 @@
         top: 50px;
         width: 29px;
         height: 18px;
-        background: url('../images/base/hide.png') no-repeat 0 0;
+        background: url("../images/base/hide.png") no-repeat 0 0;
         background-size: contain;
-        &.active{
-            background: url('../images/base/show.png') no-repeat 0 0;
+
+        &.active {
+            background: url("../images/base/show.png") no-repeat 0 0;
             background-size: contain;
         }
     }
-    [type="submit"]{
+
+    [type="submit"] {
         width: 107px;
-        height: 44px;
-        line-height: 44px;
         margin-top: 30px;
     }
-    .not-registered{
+
+    .not-registered {
         width: 385px;
         max-width: 100%;
         margin: 55px auto 0;
         font-size: 18px;
         color: #5a8099;
-        a{
+
+        a {
             font-family: $opensanscond;
             font-weight: 700;
             font-size: 24px;

@@ -28,7 +28,6 @@
                 height: 44px;
                 border-radius: 22px;
                 background-color: #e1ecf2;
-                cursor: pointer;
                 font-family: $opensanscond;
                 text-align: center;
                 font-weight: 700;
@@ -43,11 +42,65 @@
 
             label {
                 right: 33%;
+                cursor: pointer;
             }
 
             .delete-image {
                 left: 33%;
+                color: #de362d;
             }
+        }
+    }
+
+    .form-control {
+        width: 385px;
+        max-width: 100%;
+        margin: 0 auto 25px;
+        position: relative;
+    }
+
+    .forgot-password {
+        color: #de362d;
+        position: absolute;
+        right: 0;
+        top: -20px;
+    }
+
+    [type="submit"] {
+        width: 150px;
+        margin: 40px auto 0;
+    }
+
+    #avatar {
+        position: absolute;
+        left: -9999px;
+        top: -9999px;
+        z-index: -9999;
+    }
+
+    .delete-profile {
+        display: block;
+        width: 173px;
+        height: 44px;
+        line-height: 44px;
+        position: absolute;
+        margin: 30px 0 0 30px;
+    }
+
+    .profile-icon {
+        width: 170px;
+        height: 170px;
+        border: 10px solid #fff;
+        border-radius: 50%;
+        overflow: hidden;
+        margin: 20px auto 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+
+        &.stock-img {
+            background: url("../images/register/stock-img.png") no-repeat center;
+            background-size: 150px auto;
         }
     }
 
@@ -89,60 +142,6 @@
             background: url("../images/base/max-big.png") no-repeat top -22px right -21px;
             background-size: auto 423px;
             margin-top: 95px;
-        }
-    }
-
-    .form-control {
-        width: 385px;
-        max-width: 100%;
-        margin: 0 auto 25px;
-        position: relative;
-    }
-
-    .forgot-password {
-        color: #de362d;
-        position: absolute;
-        right: 0;
-        top: -20px;
-    }
-
-    [type="submit"] {
-        width: 150px;
-        height: 44px;
-        line-height: 44px;
-        margin: 40px auto 0;
-    }
-
-    #avatar {
-        position: absolute;
-        left: -9999px;
-        top: -9999px;
-        z-index: -9999;
-    }
-
-    .delete-profile {
-        display: block;
-        width: 173px;
-        height: 44px;
-        line-height: 44px;
-        position: absolute;
-        margin: 30px 0 0 30px;
-    }
-
-    .profile-icon {
-        width: 170px;
-        height: 170px;
-        border: 10px solid #fff;
-        border-radius: 50%;
-        overflow: hidden;
-        margin: 20px auto 0;
-        position: absolute;
-        left: 0;
-        right: 0;
-
-        &.stock-img {
-            background: url("../images/register/stock-img.png") no-repeat center;
-            background-size: 150px auto;
         }
     }
 

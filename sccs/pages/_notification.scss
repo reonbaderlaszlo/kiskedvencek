@@ -16,26 +16,28 @@
         width: 563px;
         max-width: 100%;
         height: 435px;
-        margin-top: 20px;        
+        margin-top: 20px;
         background-size: contain !important;
-        &.positive{
+
+        &.positive {
             background: url("../images/base/max-big.png") no-repeat 0 0;
         }
-        &.negative{
+
+        &.negative {
             background: url("../images/base/hogolyo-big.png") no-repeat 0 0;
         }
     }
 
-   span{
-    color: #de362d;
-   }
-    p{
+    span {
+        color: #de362d;
+    }
+
+    p {
         padding-top: 10px;
     }
-    a{
+
+    a {
         width: 125px;
-        height: 44px;
-        line-height: 44px;
         margin-top: 75px;
     }
 }

@@ -143,29 +143,35 @@
 /* Pet */
 .pet {
     padding-bottom: 50px;
-    .left{
-        float: left;
 
+    .left {
+        float: left;
     }
-    .right{
+
+    .right {
         float: right;
     }
-    .left, .right{
+
+    .left, .right {
         max-width: 100%;
     }
+
     .city {
         padding-bottom: 79px;
+
         .left {
-            width: 700px;            
+            width: 700px;
         }
+
         .right {
             width: 370px;
-
         }
-    }    
-    .channel{
+    }
+
+    .channel {
         padding-bottom: 22px;
-        .left{
+
+        .left {
             width: 515px;
         }
     }
@@ -173,29 +179,34 @@
     h3 {
         padding: 45px 0 10px;
     }
-    .pictures, .videos{
+
+    .pictures, .videos {
         padding-bottom: 45px;
-        ul{
+
+        ul {
             font-size: 0;
             margin: 0 -15px;
         }
-        li{
+
+        li {
             display: inline-block;
             margin: 0 15px 15px;
         }
-        a{
+
+        a {
             display: block;
             width: 370px;
             position: relative;
             max-width: 100%;
-            box-shadow: 5px 9px rgba(0,0,0,.15);
+            box-shadow: 5px 9px rgba(0, 0, 0, 0.15);
             border: solid 8px #424556;
         }
     }
-    .videos{
-        a{
-            &:after{
-                background: url('../images/base/play-btn.png') no-repeat center;
+
+    .videos {
+        a {
+            &:after {
+                background: url("../images/base/play-btn.png") no-repeat center;
                 background-size: 55px 55px;
                 width: 55px;
                 height: 55px;
@@ -206,5 +217,5 @@
                 transform: translate(-50%, -50%);
             }
         }
-    }    
+    }
 }
