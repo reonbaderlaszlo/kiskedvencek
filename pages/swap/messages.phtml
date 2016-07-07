@@ -12,16 +12,16 @@
 		</ul>
 	</div>
 </div>
-<section class="partners swap">
+<section class="messages swap">
 	<div class="container">
 		<h2>Cserebere</h2>
 		<ul class="navigation">
 			<li><a href="/kiskedvencek/cserebere/varazskartyak">Varázskártyák</a></li>
-			<li><a class="active" href="/kiskedvencek/cserebere/partnerek">Partnerek</a></li>
+			<li><a href="/kiskedvencek/cserebere/partnerek">Partnerek</a></li>
 			<li><a href="/kiskedvencek/cserebere/listam/keresem">Listám</a></li>
-			<li><a href="/kiskedvencek/cserebere/uzenetek">Üzenetek</a></li>
+			<li><a class="active" href="/kiskedvencek/cserebere/uzenetek">Üzenetek</a></li>
 		</ul>
-		<div class="bix-box clear no-partner">
+		<div class="bix-box clear no-messages is-hidden">
 			<div class="left box-template">
 				<h1>Nincsenek üzeneteid.</h1>
 				<p>Partnerekre csak úgy találsz, ha neked is van kínálatod vagy keresett varázskártyád.<br>
@@ -30,7 +30,28 @@
 			</div>
 			<div class="right"></div>
 		</div>
-		<div class="bix-box">
+		<div class="big-box">
+			<ul class="partner-list clear">
+				<?php
+					for ($i=0; $i < 6; $i++) {
+				?>
+				<li>
+					<a href="/kiskedvencek/cserebere/uzenet/kivalasztott_partner" class="box-template">
+						<div class="top">
+							<div class="profile-image stock-image"></div>
+						</div>
+						<div class="name">Kovácsi Gétéavájsziti Dzsézönsztetem</div>
+						<div class="city">Budapest</div>
+						<div class="last-message">
+							Utolsó üzenet: <span>2016.05.10.</span>
+						</div>
+						<span class="btn grey">Megnézem</span>
+					</a>
+				</li>
+				<?php
+				}
+				?>
+			</ul>
 		</div>
 	</div>
 </section>

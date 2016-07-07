@@ -107,7 +107,7 @@ body {
     border: solid 1px #cfd8dc;
 }
 
-/* Gallery */
+/* Overlay */
 .overlay {
     position: fixed;
     width: 100%;
@@ -115,10 +115,48 @@ body {
     z-index: 2;
     top: 0;
     left: 0;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(90, 128, 153, 0.8);
     display: none;
 }
+.popup{
+    width: 570px;
+    height: 369px;
+    max-width: 100%;
+    position: absolute;
+    top: 119px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 3;
+    padding: 50px 70px 55px 90px;
+    display: none;
+    h5{
+        font-family: $robotocond;
+        text-transform: uppercase;
+        display: inline-block;
+        background-color: #faec3e;
+        font-size: 36px;
+        font-weight: 700;
+        letter-spacing: -0.050em;
+        padding-top: 0;
+        margin-bottom: 20px;
+    }
+    a{
+        display: inline-block;
+        margin-top: 50px;
+        width: 165px;
+        height: 44px;
+        line-height: 44px;
+    }
+    p{
+        font-family: $robotocond;
+        line-height: 22px;
+        color: #424556;
+    }
 
+}
+/*
 .gallery {
     display: none;
     .container {
@@ -207,4 +245,4 @@ body {
         right: -85px;
 
     }
-}
+}*/

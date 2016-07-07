@@ -159,37 +159,6 @@ h2 {
 
 /* Partners */
 .partners {
-    .no-partner {
-        .left {
-            width: 770px;
-            max-width: 100%;
-            padding: 39px 38px 26px;
-            float: left;
-            margin: 57px 0 100px;
-
-            a {
-                margin-top: 124px;
-                width: 230px;
-                height: 44px;
-                line-height: 44px;
-            }
-        }
-
-        .right {
-            width: calc(100% - 770px);
-            height: 494px;
-            max-width: 100%;
-            float: left;
-            background: url("../images/base/cards-big.png") no-repeat center right;
-            background-size: 541px auto;
-            margin-top: -25px;
-        }
-
-        h1 {
-            padding-bottom: 15px;
-        }
-    }
-
     .partner-list {
         margin: 40px -15px 60px;
 
@@ -283,6 +252,37 @@ h2 {
             color: #5a8099;
             bottom: 25px;
         }
+    }
+}
+
+.no-partner, .no-messages, .no-list {
+    .left {
+        width: 770px;
+        max-width: 100%;
+        padding: 39px 38px 26px;
+        float: left;
+        margin: 57px 0 100px;
+
+        a {
+            margin-top: 124px;
+            width: 230px;
+            height: 44px;
+            line-height: 44px;
+        }
+    }
+
+    .right {
+        width: calc(100% - 770px);
+        height: 494px;
+        max-width: 100%;
+        float: left;
+        background: url("../images/base/cards-big.png") no-repeat center right;
+        background-size: 541px auto;
+        margin-top: -25px;
+    }
+
+    h1 {
+        padding-bottom: 15px;
     }
 }
 
@@ -546,38 +546,6 @@ h2 {
         }
     }
 
-    .no-list {
-        .left {
-            width: 770px;
-            max-width: 100%;
-            min-height: 405px;
-            padding: 39px 35px 26px;
-            float: left;
-            margin: 57px 0 100px;
-
-            a {
-                margin-top: 124px;
-                width: 230px;
-                height: 44px;
-                line-height: 44px;
-            }
-        }
-
-        .right {
-            width: calc(100% - 770px);
-            height: 494px;
-            max-width: 100%;
-            float: left;
-            background: url("../images/base/cards-big.png") no-repeat center right;
-            background-size: 541px auto;
-            margin-top: -25px;
-        }
-
-        h1 {
-            padding-bottom: 15px;
-        }
-    }
-
     .search-box {
         width: 252px;
         height: 44px;
@@ -688,17 +656,304 @@ h2 {
         width: 169px;
         height: 44px;
         line-height: 44px;
-        margin: 0 auto ;
+        margin: 0 auto;
     }
 
     .big-box {
         position: relative;
     }
-    p{
+
+    p {
         text-align: center;
         font-size: 16px;
         color: #424556;
         padding: 10px 0 80px;
         font-family: $robotocond;
+    }
+}
+
+/* Messages */
+.messages {
+    .partner-list {
+        margin: 40px -15px 60px;
+
+        a {
+            display: block;
+            width: 270px;
+            height: 430px;
+            position: relative;
+        }
+
+        li {
+            margin: 0 15px 39px;
+            float: left;
+        }
+
+        .top {
+            height: 112px;
+            background-color: #e1ecf2;
+            position: relative;
+        }
+
+        .profile-image {
+            width: 170px;
+            height: 170px;
+            border: 10px solid #fff;
+            border-radius: 50%;
+            overflow: hidden;
+            margin: 20px auto 0;
+            position: absolute;
+            left: 0;
+            right: 0;
+
+            &.stock-image {
+                background: url("../images/register/stock-img.png") no-repeat center;
+                background-size: 150px auto;
+            }
+        }
+
+        .name {
+            text-align: center;
+            font-family: $oswald;
+            font-weight: 700;
+            text-transform: uppercase;
+            font-size: 24px;
+            color: #424556;
+            margin-top: 90px;
+        }
+
+        .city, .last-message {
+            text-align: center;
+            font-size: 18px;
+            padding-top: 5px;
+            color: #5a8099;
+
+            span {
+                color: #de362d;
+            }
+        }
+
+        .btn {
+            width: 144px;
+            height: 44px;
+            line-height: 44px;
+            position: absolute;
+            bottom: 25px;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+
+            &:hover {
+                background-color: #74879b;
+                color: #fff;
+            }
+        }
+    }
+}
+
+/* Message */
+.message {
+    .bix-box {
+        background-color: #e9f0f5;
+        margin: 30px 0 100px;
+        padding-bottom: 58px;
+    }
+
+    .top {
+        padding: 25px 0 45px 20px;
+        background-color: #fff;
+
+        .name {
+            font-size: 32px;
+            text-transform: uppercase;
+            font-family: $oswald;
+            font-weight: 700;
+            color: #424556;
+            padding-top: 30px;
+        }
+    }
+
+    .profile-i-and-n {
+        width: 500px;
+        max-width: 100%;
+        float: left;
+    }
+
+    .icon {
+        width: 135px;
+        height: 135px;
+        border-radius: 50%;
+        overflow: hidden;
+        background-color: black;
+        float: left;
+        margin-right: 13px;
+    }
+
+    .name-and-icon {
+        float: left;
+    }
+
+    .city {
+        font-size: 18px;
+        color: #5a8099;
+    }
+
+    .searched-and-offered {
+        display: inline-block;
+        margin-left: 85px;
+
+        > div {
+            width: 270px;
+            font-size: 18px;
+        }
+
+        .searched {
+            float: left;
+            color: #de362d;
+
+            li {
+                color: #fff;
+                background-color: #de362d;
+            }
+        }
+
+        .offered {
+            float: left;
+            color: #5a8099;
+            margin-left: 20px;
+
+            li {
+                color: #fff;
+                background-color: #5a8099;
+            }
+        }
+
+        ul {
+            margin: 0 -5px;
+            padding-top: 5px;
+        }
+
+        li {
+            float: left;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin: 0 5px 10px;
+            text-align: center;
+            line-height: 40px;
+        }
+
+        span {
+            font-weight: 700;
+            font-size: 36px;
+            position: relative;
+            bottom: -4px;
+            padding: 0 5px 0 10px;
+        }
+    }
+
+    .message-box {
+        margin: 30px 31px 60px;
+        position: relative;
+        &:after{
+            width: 38px;
+            height: 36px;
+            background: url('../images/message/message-after.png') no-repeat 0 0;
+            background-size: contain;
+            position: absolute;
+            content: " ";
+            left: 19px;
+            bottom: -36px;
+        }
+    }
+
+    .name-and-date {
+        height: 60px;
+        box-shadow: 0 2px #dae5eb;
+        line-height: 60px;
+        padding: 0 31px 0 15px;
+
+        .name {
+            float: left;
+            font-family: $oswald;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+            text-transform: uppercase;
+            color: #424556;
+            font-size: 24px;
+        }
+
+        .date {
+            float: right;
+            font-size: 18px;
+            color: #5a8099;
+        }
+    }
+    .text-message{
+        padding: 20px 15px 35px;
+    }
+
+    form {        
+        margin: 0 36px;
+        position: relative;
+    }
+
+    h5 {
+        margin-bottom: 17px;
+    }
+
+    input:not([type="submit"]) {
+        border-radius: 0;
+        height: 44px;
+    }
+
+    input:not([type="submit"]), textarea {
+        font-size: 18px;
+        color: #595959;
+        font-weight: 400;
+        padding: 17px 10px;
+    }
+
+    [type="submit"] {
+        width: 125px;
+        height: 44px;
+        line-height: 44px;
+        margin-top: 41px;
+    }
+
+    textarea {
+        resize: none;
+        width: 100%;
+        height: 255px;
+        background-color: #fff;
+        border: solid 2px #dae5eb;
+        margin-top: 12px;
+    }
+    .delete-all{
+            display: block;
+            width: 230px;
+            height: 50px;
+            line-height: 50px;
+            font-size: 20px;
+            color: #74879b;
+            font-weight: 700;
+            font-family: $opensanscond;
+            text-transform: uppercase;
+            text-align: center;
+            background: #e3e7eb url("../images/base/delete-icon.png") no-repeat center left 15px;
+            background-size: 20px auto !important;
+            padding-left: 23px;
+            position: absolute;
+            right: 0;
+            top: -20px;
+            border-radius: 10px 0 10px;
+
+            @include transition-all;
+
+            &:hover {
+                background: #e0423a url("../images/base/delete-icon-white.png") no-repeat center left 15px;
+                color: #fff;
+            }
+        
     }
 }

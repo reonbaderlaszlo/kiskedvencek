@@ -21,7 +21,7 @@ $(function() {
 
         e.preventDefault();
         $('.overlay').fadeOut('fast');
-        $('.gallery').fadeOut('fast');
+        $('.popup').fadeOut('fast');
 
     });
 
