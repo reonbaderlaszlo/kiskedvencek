@@ -67,4 +67,30 @@ $(function() {
 
     });
 
+    $('.mobile-menu').on('click', function (e) {
+
+        e.preventDefault();
+
+        var that = this;
+
+        if($(this).hasClass('active')){
+
+            $(that).removeClass('active');
+
+            $('header nav').slideUp('slow');
+
+            $('header').removeClass('shadow-none');
+
+        }else{
+
+            $(this).addClass('active');
+
+            $('header nav').slideDown('slow');
+
+            $('header').addClass('shadow-none');
+
+        }
+        
+    })
+
 });

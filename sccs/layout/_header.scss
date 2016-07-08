@@ -66,6 +66,41 @@ header {
         }
     }
 
+    .mobile-menu {
+        width: 53px;
+        height: 53px;
+        border-radius: 50%;
+        background: #faec3e url("../images/header/mobile-menu-open.png") no-repeat center;
+        background-size: 27px auto;
+
+        @include transition-all;
+
+        transform: rotate(0deg);
+        cursor: pointer;
+        position: absolute;
+        right: 17px;
+        top: 55px;
+        display: none;
+        -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+
+
+        &.active {
+            background: #faec3e url("../images/header/mobile-menu-close.png") no-repeat center;
+            background-size: 22px auto;
+            transform: rotate(-90deg);
+        }
+    }
+
+    .mobile-login {
+        background-color: #faec3e;
+        color: #74879b;
+
+        &:hover {
+            background-color: #de362d;
+            color: #fff;
+        }
+    }
+
     .active {
         color: #de362d;
     }

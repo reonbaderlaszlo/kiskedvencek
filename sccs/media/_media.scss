@@ -1,14 +1,838 @@
-/* Custom, iPhone Retina */
-@media only screen and (min-width: 320px) {}
+@media only screen and (max-width: 1279px) {
+    header li {
+        margin-right: 33px;
+    }
 
-/* Extra Small Devices, Phones */
-@media only screen and (min-width: 480px) {}
+    .welcome {
+        padding-left: 0;
+    }
 
-/* Small Devices, Tablets */
-@media only screen and (min-width: 768px) {}
+    .welcome .right {
+        background-size: contain;
+    }
 
-/* Medium Devices, Desktops */
-@media only screen and (min-width: 1024px) {}
+    .extra-cards li {
+        float: none;
+        margin: 0 0 55px 0;
+        text-align: center;
+        padding-bottom: 36px;
+        border-bottom: 1px solid #f2665f;
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width: 1280px) {}
+        &:last-child {
+            border-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+
+    .extra-cards .price {
+        font-size: 14px;
+
+        span {
+            font-size: 53px;
+        }
+    }
+
+    .extra-cards .price-3 {
+        position: static;
+        margin-top: 20px;
+        font-size: 14px;
+
+        span {
+            font-size: 53px;
+        }
+    }
+
+    .extra-cards .name {
+        font-size: 21px;
+        line-height: 24px;
+
+        br {
+            display: none;
+        }
+
+        margin-top: 18px;
+        min-height: 0;
+    }
+
+    .extra-cards .products {
+        padding-left: 0;
+    }
+
+    .extra-cards ul {
+        margin: 60px 0 0;
+    }
+
+    .extra-cards .description {
+        padding-bottom: 18px !important;
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    footer .right {
+        float: none;
+        position: absolute;
+        right: 0;
+        top: 59px;
+    }
+
+    .promo .left, .promo .right {
+        width: 100%;
+        float: none;
+        padding-left: 0;
+    }
+
+    .promo .right {
+        background-position: center;
+        margin-top: 20px;
+    }
+
+    .pets .top .right {
+        width: 352px;
+        height: 308px;
+    }
+
+    .pets .cards {
+        width: 593px;
+        margin: 33px auto;
+    }
+
+    .pets .bottom .right {
+        width: 435px;
+        height: 228px;
+    }
+
+    .pet .city .left {
+        width: 100%;
+        text-align: center;
+        float: none;
+    }
+
+    .pet .city .right {
+        width: 100%;
+    }
+
+    .pet .right {
+        float: none;
+        text-align: center;
+    }
+
+    .pet .channel .left {
+        width: 100%;
+    }
+
+    .login .left, .register .left {
+        width: 480px;
+    }
+
+    .login .right, .register .right {
+        width: 450px;
+        height: 320px;
+    }
+
+    .register .checkbox-1, .register .checkbox-2 {
+        padding-left: 0;
+    }
+
+    .forgot-password .left, .notification .left {
+        width: 480px;
+    }
+
+    .notification .right {
+        width: 455px;
+    }
+
+    .forgot-password .right {
+        width: 450px;
+        height: 382px;
+    }
+
+    .profile {
+        margin-bottom: 100px;
+    }
+
+    .profile .left {
+        width: 480px;
+    }
+
+    .profile .left .top {
+        height: 153px;
+    }
+
+    .profile .profile-icon {
+        margin-top: 70px;
+    }
+
+    .profile .left .top .delete-image {
+        left: 20%;
+    }
+
+    .profile .left .top label {
+        right: 20%;
+    }
+
+    .profile .left .top label, .profile .left .top .delete-image {
+        top: 250px;
+    }
+
+    .profile .delete-profile {
+        margin: 20px 0 0 20px;
+    }
+
+    .profile .right {
+        width: 400px;
+    }
+
+    .profile .right .bottom {
+        height: 370px;
+    }
+
+    .impress .left {
+        width: 480px;
+    }
+
+    .impress .right {
+        width: 450px;
+    }
+
+    .roadshow .top {
+        padding: 15px 10px;
+    }
+
+    .roadshow .form-control:nth-of-type(2) {
+        margin-left: 14px;
+    }
+    .roadshow{
+    	.table-box{
+    		width: auto;
+    		margin: 45px 10px;
+    	}
+    }
+}
+
+@media only screen and (max-width: 1023px) {
+	.roadshow .table-box{
+		display: none;
+	}
+    .roadshow .form-control, .roadshow label, .roadshow select {
+        display: block;
+    }
+
+    .roadshow .form-control:nth-of-type(2) {
+        margin-left: 0;
+    }
+
+    .roadshow label {
+        margin: 0 0 5px 3px;
+    }
+
+    .roadshow select {
+        width: 100%;
+    }
+
+    h3 {
+        text-align: center;
+        font-size: 38px;
+        text-align: center;
+    }
+
+    header {
+        min-height: 125px;
+        height: auto;
+
+        .logout-button, .login-button {
+            display: none;
+        }
+    }
+
+    header .profile-icon .icon {
+        display: none;
+    }
+
+    header .mobile-menu {
+        display: block;
+    }
+
+    header .profile-icon .name {
+        width: 200px;
+        text-align: right;
+        overflow: hidden;
+        height: 24px;
+        margin-top: 0;
+    }
+
+    header .profile-icon {
+        right: 10px;
+        top: 10px;
+        margin-top: 0;
+    }
+
+    header .right {
+        float: none;
+        margin-left: 0;
+    }
+
+    header .left {
+        float: none;
+        height: 80px;
+        border-top: 1px solid #dde3e8;
+        margin: 40px -10px 0;
+        padding: 0 10px;
+    }
+
+    header li {
+        display: block;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    header .mobile-seperator {
+        display: block;
+    }
+
+    header .spar-logo {
+        margin-top: 0;
+        position: absolute;
+        left: 10px;
+        top: 9px;
+    }
+
+    header .kiskedvencek-logo {
+        width: 160px;
+        height: 68px;
+    }
+
+    .shadow-none {
+        box-shadow: none;
+    }
+
+    header nav {
+        display: none;
+        margin: 10px -10px 0;
+    }
+
+    header .container {
+        min-height: 125px;
+    }
+
+    h1 {
+        font-size: 32px;
+        line-height: 41px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+    }
+
+    header li a {
+        font-size: 16px;
+        text-align: center;
+        height: 46px;
+        line-height: 46px;
+        border-bottom: 2px solid #e8ecf0;
+    }
+
+    header li:first-child a {
+        border-top: 2px solid #e8ecf0;
+    }
+
+    .welcome .left, .welcome .right {
+        width: 100%;
+        float: none;
+    }
+
+    .welcome h1 {
+        width: 100%;
+        margin-bottom: 260px;
+    }
+
+    .welcome .right {
+        width: 300px;
+        height: 210px;
+        margin: 0 auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 80px;
+    }
+
+    .welcome {
+        padding: 25px 0;
+    }
+
+    .welcome a {
+        margin: 35px auto 0;
+    }
+
+    footer .right {
+        top: 30px;
+        left: 0;
+        margin: 0 auto;
+    }
+
+    footer .spar-logo {
+        margin: 0 auto;
+        position: relative;
+        left: 9px;
+    }
+
+    footer .left {
+        float: none;
+        margin: 70px auto 0;
+        width: 204px;
+    }
+
+    footer .kiskedvencek-logo {
+        width: 204px;
+        height: 86px;
+        background-position: center !important;
+    }
+
+    footer .center {
+        float: none;
+        max-width: 100%;
+    }
+
+    footer li {
+        display: block;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    footer nav {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    footer li a {
+        font-size: 16px;
+        text-align: center;
+        height: 46px;
+        line-height: 46px;
+        border-bottom: 2px solid #e8ecf0;
+    }
+
+    footer li:first-child a {
+        border-top: 2px solid #e8ecf0;
+    }
+
+    footer .copyright {
+        padding: 30px 0;
+        font-size: 12px;
+    }
+
+    .breadcrumb a {
+        line-height: 50px;
+        font-size: 14px;
+    }
+
+    .breadcrumb {
+        height: 50px;
+    }
+
+    .breadcrumb li {
+        margin-right: 20px;
+    }
+
+    .breadcrumb a:after {
+        bottom: 20px;
+    }
+
+    .promo h1 {
+        padding-top: 22px;
+    }
+
+    h2 {
+        font-size: 22px;
+        line-height: 24px;
+        height: auto;
+        padding-bottom: 42px;
+    }
+
+    .pets .top .right, .pets .bottom .right {
+        width: 300px;
+        height: 260px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 130px;
+    }
+
+    .pets .top .left, .pets .bottom .left {
+        margin-top: 280px;
+        width: 100%;
+        float: none;
+    }
+
+    .pets .bottom {
+        position: relative;
+
+        &:after, &:before {
+            clear: both;
+            display: table;
+            content: " ";
+        }
+    }
+
+    .pets .bottom .right {
+        width: 425px;
+        height: 219px;
+        top: 50px;
+    }
+
+    .pets .bottom .left {
+        margin-top: 260px;
+    }
+
+    .pets p {
+        padding: 25px 110px 0;
+    }
+
+    .login .right, .register .right {
+        width: 300px;
+        height: 215px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 125px;
+    }
+
+    .login .left, .register .left {
+        width: 100%;
+        padding: 60px 10px;
+        margin-top: 210px;
+    }
+
+    .register .left {
+        padding: 0 10px 60px;
+    }
+
+    .register .top {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .forgot-password .right, .notification .right {
+        width: 300px;
+        height: 255px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        top: 125px;
+    }
+
+    .forgot-password .right, .forgot-password .left {
+        float: none;
+    }
+
+    .forgot-password .left, .notification .left {
+        width: 100%;
+        margin-top: 295px;
+        height: auto;
+        padding: 53px 10px 35px;
+    }
+
+    .forgot-password .form-control {
+        margin: 0 auto;
+    }
+
+    .forgot-password [type="submit"] {
+        margin: 40px auto 0;
+    }
+
+    .notification a {
+        margin: 30px auto 0;
+    }
+
+    .profile .logout {
+        display: block;
+    }
+
+    .profile .left {
+        width: 100%;
+        float: none;
+        margin-bottom: 50px;
+        padding: 0 10px 40px;
+    }
+
+    .profile .left .top {
+        margin-right: -10px;
+        margin-left: -10px;
+    }
+
+    .profile .left .top label {
+        right: 25%;
+    }
+
+    .profile .left .top .delete-image {
+        left: 25%;
+    }
+
+    .profile .right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .profile .right .seperator {
+        background-repeat: repeat-x;
+    }
+
+    .profile .right .bottom {
+        background-position: top -22px center;
+        margin-top: 45px;
+    }
+
+    .promo li {
+        font-size: 16px;
+    }
+
+    .impress .right {
+        width: 300px;
+        height: 276px;
+        float: none;
+        position: absolute;
+        top: 130px;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        background-position: center left -37px;
+    }
+
+    .impress .left {
+        width: 100%;
+        float: none;
+        margin-top: 320px;
+
+        p {
+            text-align: left;
+        }
+    }
+
+    .roadshow {
+       .table-box{
+
+       }
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    h2 {
+        background-position: left -250px bottom;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .pets p {
+        padding: 25px 0 0;
+    }
+
+    .pets .cards {
+        width: 100%;
+    }
+
+    .pets .cards li {
+        display: block;
+        margin: 0 auto 24px;
+    }
+
+    .pets .cards a {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .popup {
+        margin: 0 10px;
+        width: auto;
+        height: auto;
+        top: 50px;
+        padding: 50px 20px 55px 20px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .login #password, .profile #new-password, .register #password {
+        padding-right: 45px;
+    }
+
+    .show-password {
+        right: 10px;
+        top: 43px;
+    }
+
+    .error {
+        font-size: 12px;
+        top: 5px;
+    }
+
+    .login .left {
+        padding: 20px 10px;
+    }
+
+    form input:not([type="submit"]) {
+        height: 45px;
+    }
+
+    .btn {
+        height: 35px;
+        line-height: 35px;
+        font-size: 18px;
+    }
+
+    .login .not-registered a, .register .already-registered a {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .login .not-registered, .register .already-registered {
+        font-size: 16px;
+        margin-top: 27px;
+    }
+
+    .register .checkbox-2 {
+        white-space: normal;
+    }
+
+    .register [type="submit"] {
+        margin: 60px auto 0;
+    }
+
+    input[type=checkbox].css-checkbox + label.css-label {
+        font-size: 14px;
+    }
+
+    .register .checkbox-2 a {
+        font-size: 14px;
+    }
+
+    .register .left {
+        padding-bottom: 20px;
+    }
+
+    .login .left, .register .left, .forgot-password, .notification, .profile, .impress {
+        margin-bottom: 50px;
+    }
+
+    .login p {
+        padding: 14px 0 8px;
+    }
+
+    .profile .left .top .delete-image {
+        left: 50px;
+    }
+
+    .profile .left .top label {
+        right: 50px;
+    }
+
+    .profile .right .bottom {
+        background-size: contain;
+        background-position: center left -23px;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .extra-cards .video {
+        height: 235px;
+    }
+
+    .promo .right {
+        height: 420px;
+        margin-top: 20px;
+    }
+
+    .promo {
+        padding-bottom: 0;
+    }
+
+    h2 {
+        background-position: left -290px bottom;
+    }
+
+    .login .not-registered {
+        margin-top: 20px;
+    }
+
+    .profile .delete-profile, .profile .logout {
+        width: 130px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .extra-cards .video {
+        height: 195px;
+    }
+
+    .login .not-registered a {
+        margin: 10px 0 0 0;
+    }
+
+    .register .checkbox-2 a {
+        position: relative;
+        top: -10px;
+    }
+
+    .popup a {
+        margin-top: 15px;
+        width: 115px;
+    }
+
+    .popup {
+        padding: 25px 10px 30px;
+
+        h5 {
+            line-height: 36px;
+        }
+    }
+}
+
+@media only screen and (max-width: 369px) {
+    h2 {
+        background-position: left -378px bottom;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .extra-cards .video {
+        height: 170px;
+    }
+
+    .promo .right {
+        height: 330px;
+    }
+
+    .pets .bottom .right {
+        height: 170px;
+    }
+
+    .pets .bottom .left {
+        margin-top: 195px;
+    }
+
+    .profile .delete-profile {
+        margin-left: 10px;
+    }
+
+    .profile .logout {
+        margin-right: 10px;
+    }
+
+    .profile .left .top .delete-image {
+        left: 25px;
+    }
+
+    .profile .left .top label {
+        right: 25px;
+    }
+
+    .profile .right .bottom {
+        height: 275px;
+        margin: 20px 0 -20px;
+    }
+}

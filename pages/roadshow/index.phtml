@@ -28,7 +28,7 @@
 					</select>
 				</div>
 				<div class="form-control">
-				<label for="date">Dátum:</label>
+					<label for="date">Dátum:</label>
 					<select id="date">
 						<option selected disabled>Mind</option>
 						<option>Annyira</option>
@@ -38,23 +38,57 @@
 			</div>
 			<div class="table-box">
 				<table>
-						<tr>
-							<td>Dátum <span></span><span></span></td>
-							<td>Időpont <span></span><span></span></td>
-							<td>Cím <span></span><span></span></td>
-							<td>SPAR üzlet <span></span><span></span></td>
-						</tr>
-					<?php for ($i=0; $i < 50; $i++) { 
-						?>
-						<tr>
-							<td>2016-05-10</td>
-							<td>9:00</td>
-							<td>1083 Budapest, Szigony utva 12.</td>
-							<td>SPAR Szupermarket</td>
-						</tr>
-						<?php
+					<tr>
+						<td>Dátum <span></span><span></span></td>
+						<td>Időpont <span></span><span></span></td>
+						<td>Cím <span></span><span></span></td>
+						<td>SPAR üzlet <span></span><span></span></td>
+					</tr>
+					<?php for ($i=0; $i < 50; $i++) {
+					?>
+					<tr>
+						<td>2016-05-10</td>
+						<td>9:00</td>
+						<td>1083 Budapest, Szigony utva 12.</td>
+						<td>SPAR Szupermarket</td>
+					</tr>
+					<?php
 					} ?>
 				</table>
+			</div>
+			<div class="table-box-mobile">
+				<div class="sort">
+					<div class="row">
+						<a href="">Üzlet:</a>
+						<a href="">Dátum:</a>
+					</div>
+					<div class="row">
+						<a href="">Időpont:</a>
+						<a href="">Cím:</a>
+					</div>
+				</div>
+				<div class="list">
+					<div class="row two clear">
+						<div class="date">
+							<span>Dátum:</span>
+							2016-05-10
+						</div>
+						<div class="time">
+							<span>Időpont:</span>
+							10:00
+						</div>
+					</div>					
+					<div class="row">
+						<div class="address">
+							<span>Cím:</span>
+							1083 Budapest, Szigony utca 12.
+						</div>
+						<div class="name">
+							<span>Üzlet:</span>
+							SPAR Szupermarket
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

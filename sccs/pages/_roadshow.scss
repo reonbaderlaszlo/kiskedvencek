@@ -59,6 +59,44 @@
         border: solid 1px #cfd8dc;
     }
 
+    .table-box-mobile{
+        .list .row{
+            .address, .name{
+                padding-left: 25px;
+                span{
+                    left: -15px;
+                    position: relative;
+
+                }
+            }
+            >div{
+                    border-bottom: 1px solid #cfd8dc;
+                    border-right: 1px solid #cfd8dc;
+                    font-size: 18px;
+                    color: #424556;
+                    position: relative;
+                    padding: 5px 0 10px 10px;                                   
+
+            }
+            span{
+                text-align: left;
+                padding-left: 5px;
+                font-family: "Roboto Condensed", sans-serif;
+                color: #5a8099;                
+                border-color: #eff5f8;
+                display: block;
+                margin-bottom: 5px;
+            }
+            &.two{
+                >div{
+                    width: 50%;
+                    float: left;
+                    text-align: center;                    
+                }
+            }
+        }
+    }
+
     table {
         width: 100%;
     }
